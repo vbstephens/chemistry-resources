@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}                    % math tools
+\usepackage[explicit]{titlesec}         % section formatting
+\usepackage{titling}                    % title formatting
+\usepackage[margin=1.0in]{geometry}     % easy margin change
+\usepackage{enumitem}                   % change line spacing in lists
+\usepackage[version=4]{mhchem}          % chem formatting
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formatting
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Sections -----------------------------------------------------------
+\titleformat{\section}      [block]{\normalfont\sffamily\bfseries\filcenter}{{\thesection}.}{1em}{\MakeUppercase{#1}}
+\titleformat{\subsection}   [block]{\normalfont\large\sffamily\bfseries}{{\thesubsection}.}{1em}{\MakeUppercase{#1}}
+\titleformat{\subsubsection}[block]{\normalfont\large\sffamily\bfseries}{{\thesubsubsection}.}{1em}{\MakeUppercase{#1}}
+
+\newcommand{\sectionspace}{\vspace{8pt}} % Defines a command to add a set amount of space after sections and subsections
+
+% Title --------------------------------------------------------------
+\pretitle{\begin{center}\Large\sffamily\bfseries}
+\posttitle{\par\end{center}}
+\setlength{\droptitle}{-5em}
+%\preauthor{\begin{center}}
+%\postauthor{\end{center}}
+%\predate{\begin{center}}
+%    \date{}
+%\postdate{\par\end{center}}
+
+% Columns -----------------------------------------------------------
+\setlength{\columnsep}{0.3in}           % change column separation width
+
+% Lists --------------------------------------------------------------
+\setlist{noitemsep}                     % no separation between items in a list
+
+% Text ---------------------------------------------------------------
+\def\code#1{\texttt{#1}}                % "code" formatted text using \code{} command
+
+% Tables/figures -----------------------------------------------------
+\def\arraystretch{1.1}                  % table cell vertical padding; default = 1.0

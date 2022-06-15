@@ -1,0 +1,106 @@
+% Preamble
+\documentclass[10pt]{article}
+
+% Packages
+\usepackage{writeup_style}
+
+% Document
+\begin{document}
+%---------------------------------------------------
+% Title, authors and addresses
+    \title{\uppercase{Units in Chemistry}}
+    \date{\vspace{-10ex}}
+%\author{Victoria B. Stephens\\
+%        Created: March 12, 2020 \\
+%        Last updated: \today}
+
+    \maketitle
+    \thispagestyle{empty}
+%---------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+    \begin{minipage}[t]{0.5\textwidth}
+        \section*{SI Base Units}
+        \begin{tabular}{l l l}
+            Quantity    & Unit      & Symbol \\
+            \hline
+            length      & meter     & \si{m} \\
+            mass        & kilogram  & \si{kg} \\
+            time        & second    & \si{s} \\
+            temperature & Kelvin    & \si{K} \\
+            amount      & mole      & \si{mol} \\
+        \end{tabular}
+        \sectionspace
+        \section*{Derived Quantities}
+        \begin{tabular}{l l l}
+            Quantity    & Derivation               & SI Units \\
+            \hline
+            volume      & (length)$^3$             & \si{m^3} \\
+            density     & mass/volume              & \si{kg/m^3} \\
+            force       & mass$\cdot$length/(time)$^2$ & \si{N = kg.m/s^2} \\
+            pressure    & force/(length)$^2$       & \si{Pa = N/m^2} \\
+            energy      & force$\cdot$length           & \si{J = N.m} \\
+        \end{tabular}
+    \end{minipage}%
+    \sectionspace
+    \begin{minipage}[t]{0.5\textwidth}
+        \section*{Units of Temperature}
+        \begin{tabular}{l c l}
+            Unit            & Symbol           & Conversion  \\
+            \hline
+            Kelvin (SI)     & \si{K}           & \\
+            Celcius         & \si{\degree C}   & \si{\degree C} = \si{K} + 273.15 \\
+            Fahrenheit      & \si{\degree F}   & \si{\degree F} = (\si{\degree C}$\times$1.8) + 32 \\
+        \end{tabular}
+        \sectionspace
+        \section*{Units of Pressure}
+        \begin{tabular}{l l l}
+            Unit        & Symbol            & Conversion(s)  \\
+            \hline
+            atmosphere      & \si{atm}   &  \\
+            Pascal (SI)     & \si{Pa}    & 1 \si{atm} = 101325 \si{Pa} \\
+            torr            & \si{torr}  & 1 \si{atm} = 760 \si{torr} \\
+            millimeters mercury & \si{mmHg} & 1 \si{atm} = 760 \si{mmHg} \\
+            inches mercury & \si{inHg} & 1 \si{atm} = 29.92 \si{inHg} \\
+            pounds per square inch & \si{psi} & 1 \si{atm} = 14.7 \si{psi} \\
+        \end{tabular}
+        \sectionspace
+        \section*{Units of Energy}
+        \begin{tabular}{l c l}
+            Unit        & Symbol            & Conversion  \\
+            \hline
+            Joule (SI)      & \si{J}          & 1 \si{J} = 1 \si{N.m} \\
+            calorie         & \si{cal}   & 1 \si{cal} = 4.184 \si{J} \\
+            Calorie      & \si{Cal}   & 1 \si{Cal} = 1000 \si{cal} \\
+            kilowatt-hour   & \si{kWh}   & 1 \si{kWh} = \num{3.6E6} \si{J} \\
+            British thermal unit   & \si{BTU}   & 1 \si{BTU} = 1055.1 \si{J} \\
+            erg   & \si{erg}   & 1 \si{erg} = \num{1E-7} \si{J} \\
+        \end{tabular}
+    \end{minipage}%
+    \sectionspace
+    \begin{minipage}[t]{0.5\textwidth}
+
+    \end{minipage}%
+    \sectionspace
+
+    \begin{minipage}[t]{0.5\textwidth}
+        \section*{Units of Concentration}
+        \sectionspace
+        \begin{tabular}{l l l}
+            Unit        & Definition            & Units  \\
+            \hline
+            molarity (M)     & $\frac{\text{amount solute (moles)}}{\text{volume solution (L)}}$  & \si{mol/L} \\
+            molality (m)      & $\frac{\text{amount solute (moles)}}{\text{mass solvent (kg)}}$   & \si{mol/kg} \\
+            mole fraction ($\chi$) & $\frac{\text{amount solute (moles)}}{\text{amount solute + solvent (mol)}}$  & N/A \\
+            mole percent (mol \%) & $\frac{\text{amount solute (kg)}}{\text{amount solute + solvent (mol)}} \times 100\%$ & \% \\
+            mass fraction ($y$) & $\frac{\text{mass solute (kg)}}{\text{mass solute + solvent (kg)}}$  & N/A \\
+            mass percent (mass \%) & $\frac{\text{mass solute (kg)}}{\text{mass solute + solvent (kg)}} \times 100\%$ & \% \\
+            parts per million (ppm) & $\frac{\text{mass solute (kg)}}{\text{mass solute + solvent (kg)}} \times 10^6$ & 1 \si{ppm} \\
+            parts per billion (ppb) & $\frac{\text{mass solute (kg)}}{\text{mass solute + solvent (kg)}} \times 10^9$ & 1 \si{ppb} \\
+        \end{tabular}
+    \end{minipage}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}
